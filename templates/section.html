@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p>{{ summary }}</p>
+<p class="notice">Internal QA build. Data may be stale.</p>
+<h2>Available Pages</h2>
+<ul>
+  {% for slug, label in links %}
+  <li><a href="/{{ section }}/{{ slug }}">{{ label }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p>Generated extract for internal review only.</p>
+<pre>{% for line in lines %}{{ line }}
+{% endfor %}</pre>
+<p><a href="/{{ section }}/">Return to {{ section }} index</a></p>
+{% if comment is defined %}<!-- {{ comment }} -->{% endif %}
+{% endblock %}

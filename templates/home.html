@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to CorpTools Internal Portal</h1>
+<p>Internal QA build. Do not distribute outside approved network ranges.</p>
+<p class="notice">Staging environment. Contact IT operations for service availability questions.</p>
+<h2>Status</h2>
+<table>
+  <tr><th>System</th><th>State</th><th>Owner</th></tr>
+  <tr><td>Request intake</td><td>Available</td><td>Operations</td></tr>
+  <tr><td>Reporting mirror</td><td>Maintenance</td><td>Platform</td></tr>
+  <tr><td>Archive worker</td><td>Delayed</td><td>Infrastructure</td></tr>
+</table>
+<!-- Follow this -> /f -->
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Staging Login</h1>
+<p>Maintenance account access only.</p>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="POST" action="/hidden/login">
+  <label>Username
+    <input type="text" name="username" autocomplete="off">
+  </label>
+  <label>Password
+    <input type="password" name="password" autocomplete="off">
+  </label>
+  <button type="submit">Sign in</button>
+</form>
+{% endblock %}
